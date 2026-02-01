@@ -680,7 +680,7 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: 1.5fr 1fr;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 1px;
             background: var(--border-secondary);
             border: 1px solid var(--border-secondary);
@@ -712,23 +712,14 @@
         .project:hover::before { opacity: 1; }
 
         .project-highlight {
-            grid-row: span 2;
             border-left: 2px solid #22c55e;
             background: linear-gradient(135deg, rgba(34, 197, 94, 0.06) 0%, transparent 60%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
         }
 
         .project-highlight .project-title { color: #22c55e; }
 
         .project-highlight:hover {
             background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, var(--bg-secondary) 60%);
-        }
-
-        .project-highlight p {
-            font-size: 1.0625rem;
-            line-height: 1.7;
         }
 
         .project-title {
@@ -1421,7 +1412,7 @@
             <div class="container">
                 <h2 class="section-title">Side Projects</h2>
                 <div class="projects-grid">
-                    <a href="/audio-priority" class="project project-highlight">
+                    <a href="https://badalotti.dev/audio-priority" class="project project-highlight">
                         <h3 class="project-title">Audio Priority</h3>
                         <p>A macOS menu bar app that automatically switches to your preferred audio device. Set priorities once, forget forever.</p>
                         <span class="project-link">badalotti.dev/audio-priority</span>
