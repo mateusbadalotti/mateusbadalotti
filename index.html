@@ -571,20 +571,22 @@
             overflow: hidden;
         }
 
-        .marquee-content {
+        .marquee-track {
+            display: flex;
+            animation: marquee 25s linear infinite;
+            width: max-content;
+        }
+
+        .marquee-group {
             display: flex;
             gap: 4rem;
-            animation: marquee 25s linear infinite;
-            white-space: nowrap;
+            padding-right: 4rem;
+            flex-shrink: 0;
         }
 
-        .marquee-content > span[aria-hidden] {
-            display: contents;
-        }
+        .marquee:hover .marquee-track { animation-play-state: paused; }
 
-        .marquee:hover .marquee-content { animation-play-state: paused; }
-
-        .marquee-content a {
+        .marquee-track a {
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.875rem;
             color: var(--text-muted);
@@ -594,7 +596,7 @@
             position: relative;
         }
 
-        .marquee-content a::after {
+        .marquee-track a::after {
             content: '';
             position: absolute;
             bottom: -4px;
@@ -605,12 +607,12 @@
             transition: width var(--transition-base);
         }
 
-        .marquee-content a:hover { color: var(--text-primary); }
-        .marquee-content a:hover::after { width: 100%; }
+        .marquee-track a:hover { color: var(--text-primary); }
+        .marquee-track a:hover::after { width: 100%; }
 
         @keyframes marquee {
             from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
+            to { transform: translateX(calc(-1 * var(--marquee-distance, 50%))); }
         }
 
         /* Section Titles */
@@ -1268,7 +1270,7 @@
             .badge { font-size: 0.5625rem; padding: 0.25rem 0.5rem; }
             .btn { padding: 0.75rem 1.25rem; font-size: 0.6875rem; }
             .social-links a { padding: 0.375rem 0.75rem; font-size: 0.6875rem; }
-            .marquee-content a { font-size: 0.75rem; }
+            .marquee-track a { font-size: 0.75rem; }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -1277,7 +1279,7 @@
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
             }
-            .marquee-content { animation: none; }
+            .marquee-track { animation: none; }
         }
     </style>
 </head>
@@ -1349,7 +1351,7 @@
                             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                             LinkedIn
                         </a>
-                        <a href="https://badalotti.dev/cv.pdf" class="btn btn-secondary btn-icon" download>
+                        <a href="https://badalotti.dev/mateus_badalotti_resume.pdf" class="btn btn-secondary btn-icon" download>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                             Download CV
                         </a>
@@ -1360,26 +1362,18 @@
 
         <section class="companies">
             <p class="companies-label">Companies I've worked with</p>
-            <div class="marquee">
-                <div class="marquee-content">
-                    <a href="https://meta.com.br" target="_blank" rel="noopener noreferrer">Meta</a>
-                    <a href="https://sap.com" target="_blank" rel="noopener noreferrer">SAP</a>
-                    <a href="https://dell.com" target="_blank" rel="noopener noreferrer">Dell</a>
-                    <a href="https://lojasrenner.com.br" target="_blank" rel="noopener noreferrer">Lojas Renner</a>
-                    <a href="https://vivara.com.br" target="_blank" rel="noopener noreferrer">Vivara</a>
-                    <a href="https://iplace.com.br" target="_blank" rel="noopener noreferrer">iPlace</a>
-                    <a href="https://compass.uol" target="_blank" rel="noopener noreferrer">Compass UOL</a>
-                    <a href="https://aggrandize.com.br" target="_blank" rel="noopener noreferrer">Aggrandize</a>
-                    <span aria-hidden="true">
-                        <a href="https://meta.com.br" target="_blank" rel="noopener noreferrer" tabindex="-1">Meta</a>
-                        <a href="https://sap.com" target="_blank" rel="noopener noreferrer" tabindex="-1">SAP</a>
-                        <a href="https://dell.com" target="_blank" rel="noopener noreferrer" tabindex="-1">Dell</a>
-                        <a href="https://lojasrenner.com.br" target="_blank" rel="noopener noreferrer" tabindex="-1">Lojas Renner</a>
-                        <a href="https://vivara.com.br" target="_blank" rel="noopener noreferrer" tabindex="-1">Vivara</a>
-                        <a href="https://iplace.com.br" target="_blank" rel="noopener noreferrer" tabindex="-1">iPlace</a>
-                        <a href="https://compass.uol" target="_blank" rel="noopener noreferrer" tabindex="-1">Compass UOL</a>
-                        <a href="https://aggrandize.com.br" target="_blank" rel="noopener noreferrer" tabindex="-1">Aggrandize</a>
-                    </span>
+            <div class="marquee" data-marquee>
+                <div class="marquee-track">
+                    <div class="marquee-group" data-marquee-group>
+                        <a href="https://meta.com.br" target="_blank" rel="noopener noreferrer">Meta</a>
+                        <a href="https://sap.com" target="_blank" rel="noopener noreferrer">SAP</a>
+                        <a href="https://dell.com" target="_blank" rel="noopener noreferrer">Dell</a>
+                        <a href="https://lojasrenner.com.br" target="_blank" rel="noopener noreferrer">Lojas Renner</a>
+                        <a href="https://vivara.com.br" target="_blank" rel="noopener noreferrer">Vivara</a>
+                        <a href="https://iplace.com.br" target="_blank" rel="noopener noreferrer">iPlace</a>
+                        <a href="https://compass.uol" target="_blank" rel="noopener noreferrer">Compass UOL</a>
+                        <a href="https://aggrandize.com.br" target="_blank" rel="noopener noreferrer">Aggrandize</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1616,6 +1610,49 @@
             section.style.transform = 'translateY(20px)';
             section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
             revealOnScroll.observe(section);
+        });
+
+        const marquee = document.querySelector('[data-marquee]');
+        const marqueeMinGroups = 2;
+        const marqueeCoverage = 2;
+        const marqueeResizeDelay = 150;
+        let marqueeResizeTimer;
+
+        const setupMarquee = () => {
+            if (!marquee) return;
+            const track = marquee.querySelector('.marquee-track');
+            const baseGroup = marquee.querySelector('[data-marquee-group]');
+            if (!track || !baseGroup) return;
+
+            track.replaceChildren(baseGroup);
+            baseGroup.removeAttribute('aria-hidden');
+            baseGroup.querySelectorAll('a').forEach(link => link.removeAttribute('tabindex'));
+
+            const containerWidth = marquee.getBoundingClientRect().width;
+            const groupWidth = baseGroup.getBoundingClientRect().width;
+
+            if (!containerWidth || !groupWidth) return;
+
+            const totalGroups = Math.max(
+                marqueeMinGroups,
+                Math.ceil((containerWidth * marqueeCoverage) / groupWidth)
+            );
+            for (let i = 1; i < totalGroups; i++) {
+                const clone = baseGroup.cloneNode(true);
+                clone.removeAttribute('data-marquee-group');
+                clone.setAttribute('aria-hidden', 'true');
+                clone.querySelectorAll('a').forEach(link => link.setAttribute('tabindex', '-1'));
+                track.appendChild(clone);
+            }
+
+            track.style.setProperty('--marquee-distance', `${groupWidth}px`);
+        };
+
+        setupMarquee();
+        window.addEventListener('load', setupMarquee);
+        window.addEventListener('resize', () => {
+            clearTimeout(marqueeResizeTimer);
+            marqueeResizeTimer = setTimeout(setupMarquee, marqueeResizeDelay);
         });
     </script>
 </body>
