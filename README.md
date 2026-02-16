@@ -1,4 +1,4 @@
-Senior Software Engineer from Brazil. In addition to my full-time job, I enjoy contributing to open source, building side projects, developing tools that solve problems, automating tasks, and studying anything related to technology.
+Senior Software Engineer from Brazil. Alongside my full-time job, I enjoy contributing to open source, building side projects, developing tools that solve problems, automating tasks, and studying technology.
 
 ## This might help
 
