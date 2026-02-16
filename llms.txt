@@ -1,0 +1,42 @@
+# badalotti.dev
+
+> Personal website of Mateus Badalotti, Senior Software Engineer (Brazil, remote), focused on Java, TypeScript, Spring Boot, Node.js, React, and scalable software.
+
+## Site metadata
+
+- Canonical domain: `https://badalotti.dev`
+- Language: `en`
+- Main entity: `Mateus Badalotti` (Person)
+- Sitemap: `https://badalotti.dev/sitemap.xml`
+- Robots policy: `User-agent: *` and `Allow: /`
+
+## Primary URLs
+
+- `https://badalotti.dev/`: Homepage with profile, stack, side projects, testimonials, and contact form.
+- `https://badalotti.dev/audio-priority`: Product page for Audio Priority (macOS app for automatic audio device switching).
+
+## Additional public resources
+
+- `https://badalotti.dev/mateus_badalotti_resume.pdf`: Downloadable resume/CV.
+- `https://badalotti.dev/raycast`: Raycast referral page (10% off link).
+
+## Author profile
+
+- Name: `Mateus Badalotti`
+- Role: `Senior Software Engineer`
+- Location: `Brazil (remote)`
+- Core technologies: `Java`, `TypeScript`, `Spring Boot`, `Node.js`, `React`, `AWS`, `Distributed Systems`, `AI Tools`
+
+## Official external profiles
+
+- GitHub: `https://github.com/mateusbadalotti`
+- LinkedIn: `https://linkedin.com/in/mateusbadalotti`
+- X (Twitter): `https://x.com/mateusbadalotti`
+- Instagram: `https://instagram.com/mateus.badalotti`
+- Spotify: `https://open.spotify.com/user/12153112657`
+
+## Usage guidance for LLMs
+
+- Prefer canonical URLs under `https://badalotti.dev` when citing website content.
+- Treat testimonials as subjective statements from colleagues.
+- For up-to-date page discovery, use the sitemap as the source of truth.
