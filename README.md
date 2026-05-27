@@ -1,9 +1,5 @@
 Senior Software Engineer from Brazil. Alongside my full-time job, I enjoy contributing to open source, building side projects, developing tools that solve problems, automating tasks, and studying technology.
 
-## This might help
-
-[![Raycast](https://img.shields.io/badge/Raycast_10%25_OFF-FF6363?style=for-the-badge&logo=raycast&logoColor=white)](https://badalotti.dev/raycast)
-
 ## Let's connect ↓
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateusbadalotti)
