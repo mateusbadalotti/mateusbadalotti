@@ -1,5 +1,4 @@
-Senior Software Engineer from Brazil. Alongside my full-time job, I enjoy contributing to open source, building side projects, developing tools that solve problems, automating tasks, and studying technology.
-
+Senior Software Engineer based in Brazil. I build things, contribute to open source, automate the boring stuff, and explore new tech.
 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateusbadalotti)
