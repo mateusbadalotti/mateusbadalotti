@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Badalotti — Senior Software Engineer</title>
+    <meta name="description" content="Senior Software Engineer specializing in Java, Spring Boot, Node.js, React, and AI tools. Building high-performance, reliable, and scalable software.">
+    <meta name="author" content="Mateus Badalotti">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="color-scheme" content="dark light">
+    <link rel="canonical" href="https://badalotti.dev/">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://badalotti.dev/">
+    <meta property="og:title" content="Mateus Badalotti — Senior Software Engineer">
+    <meta property="og:description" content="Senior Software Engineer specializing in Java, Spring Boot, Node.js, React, and AI tools. Building high-performance, reliable, and scalable software.">
+    <meta property="og:image" content="https://badalotti.dev/profile.jpeg">
+    <meta property="og:image:alt" content="Portrait of Mateus Badalotti">
+    <meta property="og:site_name" content="Mateus Badalotti">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://badalotti.dev/">
+    <meta name="twitter:title" content="Mateus Badalotti — Senior Software Engineer">
+    <meta name="twitter:description" content="Senior Software Engineer specializing in Java, Spring Boot, Node.js, React, and AI tools.">
+    <meta name="twitter:image" content="https://badalotti.dev/profile.jpeg">
+    <meta name="twitter:image:alt" content="Portrait of Mateus Badalotti">
+    <meta name="twitter:site" content="@mateusbadalotti">
+    <meta name="twitter:creator" content="@mateusbadalotti">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Person",
+                    "@id": "https://badalotti.dev/#person",
+                    "name": "Mateus Badalotti",
+                    "givenName": "Mateus",
+                    "familyName": "Badalotti",
+                    "jobTitle": "Senior Software Engineer",
+                    "url": "https://badalotti.dev/",
+                    "image": "https://badalotti.dev/profile.jpeg",
+                    "description": "Senior Software Engineer specializing in Java, Spring Boot, Node.js, React, and AI tools. Building high-performance, reliable, and scalable software.",
+                    "sameAs": [
+                        "https://github.com/mateusbadalotti",
+                        "https://linkedin.com/in/mateusbadalotti",
+                        "https://x.com/mateusbadalotti",
+                        "https://instagram.com/mateus.badalotti"
+                    ],
+                    "knowsAbout": [
+                        "Java",
+                        "Spring Boot",
+                        "Node.js",
+                        "React",
+                        "TypeScript",
+                        "AWS",
+                        "Distributed Systems",
+                        "AI Tools"
+                    ],
+                    "homeLocation": {
+                        "@type": "Place",
+                        "name": "Brazil"
+                    }
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://badalotti.dev/#website",
+                    "url": "https://badalotti.dev/",
+                    "name": "Mateus Badalotti",
+                    "publisher": { "@id": "https://badalotti.dev/#person" },
+                    "inLanguage": "en"
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://badalotti.dev/#webpage",
+                    "url": "https://badalotti.dev/",
+                    "name": "Mateus Badalotti — Senior Software Engineer",
+                    "isPartOf": { "@id": "https://badalotti.dev/#website" },
+                    "about": { "@id": "https://badalotti.dev/#person" },
+                    "mainEntity": { "@id": "https://badalotti.dev/#person" },
+                    "inLanguage": "en",
+                    "primaryImageOfPage": {
+                        "@type": "ImageObject",
+                        "url": "https://badalotti.dev/profile.jpeg"
+                    }
+                }
+            ]
+        }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='system-ui,-apple-system,sans-serif' font-size='14' font-weight='600' fill='%23fff'%3EMB%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #111210;
+            --bg-secondary: #191a17;
+            --text-primary: #f0eee7;
+            --text-secondary: #c5c5bb;
+            --text-tertiary: #a0a297;
+            --text-muted: #92958a;
+            --border-primary: #32352e;
+            --accent: #c4d6a7;
+        }
+
+        [data-theme="light"] {
+            --bg-primary: #f7f6f0;
+            --bg-secondary: #eeede5;
+            --text-primary: #24271f;
+            --text-secondary: #454a3d;
+            --text-tertiary: #606657;
+            --text-muted: #646a5c;
+            --border-primary: #d7dace;
+            --accent: #4b6534;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        ::selection { background: var(--accent); color: var(--bg-primary); }
+        html { font-size: 16px; scroll-padding-top: 2rem; }
+        body {
+            font-family: 'Newsreader', Georgia, serif;
+            background: var(--bg-primary);
+            color: var(--text-secondary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+        button, input, textarea { font: inherit; }
+        button, a { -webkit-tap-highlight-color: transparent; }
+        *:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 2rem; }
+        .noise {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.018;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* Header */
+        header { padding: 1.75rem 0; position: relative; }
+        header .container, .header-actions, nav { display: flex; align-items: center; }
+        header .container { justify-content: space-between; gap: 1rem; }
+        .logo, nav, .theme-toggle, .hero-title, .location, .btn,
+        .section-title, .companies-label, .marquee-group, .stack-grid,
+        .testimonial-name, .testimonial-role, .form-group label, .form-submit,
+        .social-links, .footer-meta, .spotify-link, .raycast-link {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 400;
+        }
+        .logo { color: var(--text-primary); text-decoration: none; }
+        .logo span { color: var(--text-muted); }
+        .header-actions { gap: 1.5rem; }
+        nav { gap: 1.5rem; }
+        nav a { text-decoration: none; color: var(--text-muted); }
+
+        /* Theme Toggle */
+        .theme-toggle, .mobile-menu-toggle {
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            display: grid;
+            place-items: center;
+        }
+        .theme-toggle svg { width: 16px; height: 16px; }
+        .theme-toggle .sun, [data-theme="light"] .theme-toggle .moon { display: none; }
+        [data-theme="light"] .theme-toggle .sun { display: block; }
+
+        /* Hero Section */
+        .hero { padding: 4.5rem 0 3rem; }
+        .hero-header { display: flex; align-items: center; gap: 1rem; }
+        .profile-photo { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+        h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 400; color: var(--text-primary); line-height: 1.15; letter-spacing: -0.035em; }
+        .hero .hero-title { color: var(--text-muted); margin: 1rem 0 1.25rem; font-size: 0.8125rem; }
+        .hero p { font-size: 1.1875rem; line-height: 1.65; max-width: 600px; }
+        .location { margin-top: 1rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem; }
+        .location svg { width: 13px; height: 13px; }
+        .cta-group { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.5rem; }
+
+        /* Scroll Progress Bar */
+        .scroll-progress { position: fixed; top: 0; left: 0; width: 100%; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: left; z-index: 10; }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; color: var(--text-secondary); }
+        .btn-primary { color: var(--accent); }
+        .btn svg { width: 14px; height: 14px; }
+
+        /* Companies Section */
+        .companies { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 0; }
+        .companies-label { color: var(--text-muted); margin-bottom: 1rem; }
+        .marquee-group { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
+        .marquee-group a { text-decoration: none; }
+
+        /* Section Titles */
+        .section-title { color: var(--text-muted); font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 1.25rem; }
+        .section-subtitle { text-transform: none; letter-spacing: 0; }
+
+        /* Stack Section */
+        .stack { padding: 2rem 0 3rem; }
+        .stack-grid { display: flex; flex-wrap: wrap; gap: 0.375rem 1rem; color: var(--text-tertiary); }
+
+        /* Projects Section */
+        .projects { padding: 0 0 1rem; }
+        .projects-list { list-style: none; }
+        .projects-list li { border-top: 1px solid var(--border-primary); }
+        .projects-list li:last-child { border-bottom: 1px solid var(--border-primary); }
+        .project { display: grid; grid-template-columns: 180px minmax(0, 1fr) 16px; align-items: baseline; gap: 1rem; padding: 1.25rem 0; text-decoration: none; }
+        .project-title { font-size: 1.125rem; font-weight: 500; color: var(--text-primary); line-height: 1.4; }
+        .project p { font-size: 1rem; line-height: 1.5; color: var(--text-tertiary); }
+        .project-link { color: var(--text-muted); font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; }
+
+        /* Testimonials */
+        .testimonials { padding: 0 0 3rem; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+        .testimonial { border-left: 1px solid var(--border-primary); padding-left: 1.25rem; }
+        .testimonial-text { font-size: 1rem; color: var(--text-tertiary); margin-bottom: 1rem; }
+        .testimonial-author-info { display: flex; flex-direction: column; }
+        .testimonial-name { color: var(--text-secondary); }
+        .testimonial-role { color: var(--text-muted); font-size: 0.6875rem; }
+
+        /* Section Divider */
+        .section-divider { max-width: 736px; margin: 0 auto; height: 1px; background: var(--border-primary); }
+
+        /* Banners */
+        .spotify-banner { padding-top: 1rem; }
+        .spotify-banner, .raycast-banner { margin-bottom: 0.75rem; }
+        .spotify-banner .container, .raycast-banner .container { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem; }
+        .spotify-text, .raycast-text { color: var(--text-muted); font-size: 0.9375rem; }
+        .spotify-link, .raycast-link { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 32px; color: var(--text-secondary); }
+        .spotify-link svg, .raycast-link svg { width: 13px; height: 13px; fill: currentColor; }
+
+        /* Contact Section */
+        .contact { padding: 3rem 0 2rem; }
+        .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; min-width: 0; }
+        .form-group:has(textarea) { grid-column: 1 / -1; }
+        .form-group label { color: var(--text-tertiary); }
+        .form-group input, .form-group textarea { width: 100%; padding: 0.75rem; border: 1px solid var(--border-primary); border-radius: 0; background: transparent; color: var(--text-primary); font-size: 1rem; }
+        .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-muted); }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .form-submit { justify-self: start; padding: 0.75rem 1rem; background: var(--accent); color: var(--bg-primary); border: 1px solid var(--accent); cursor: pointer; }
+        .form-submit:disabled { opacity: 0.6; cursor: wait; }
+
+        /* Footer */
+        footer { padding: 2rem 0 3rem; }
+        footer .container { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
+        .social-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+        .social-links a { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--text-muted); min-height: 44px; text-decoration: none; }
+        .social-links svg { width: 13px; height: 13px; }
+        .footer-meta { font-size: 0.625rem; color: var(--text-muted); }
+
+        /* Back to Top */
+        .back-to-top { position: fixed; bottom: 1rem; right: 1rem; width: 40px; height: 40px; background: var(--bg-primary); border: 1px solid var(--border-primary); color: var(--text-tertiary); display: grid; place-items: center; visibility: hidden; cursor: pointer; }
+        .back-to-top.visible { visibility: visible; }
+        .back-to-top svg { width: 16px; height: 16px; }
+
+        /* Responsive */
+        @media (hover: hover) and (pointer: fine) {
+            a:hover, nav a:hover, .project:hover .project-title, .project:hover .project-link { color: var(--accent); }
+            .project:hover .project-title { text-decoration: underline; text-underline-offset: 4px; }
+            button:hover { opacity: 0.8; }
+        }
+        button:active { transform: scale(0.97); }
+        @media (max-width: 600px) {
+            .container { padding: 0 1.5rem; }
+            header { padding: 1rem 0; }
+            .hero { padding: 2.5rem 0; }
+            .hero-header { gap: 0.75rem; }
+            .profile-photo { width: 40px; height: 40px; }
+            .hero p { font-size: 1.0625rem; }
+            .project { grid-template-columns: minmax(0, 1fr) 16px; gap: 0.25rem 1rem; padding: 1rem 0; }
+            .project p { grid-column: 1; }
+            .project-link { grid-column: 2; grid-row: 1; }
+            .companies { padding: 2rem 1.5rem 0; }
+            .testimonials-grid, .contact-form { grid-template-columns: 1fr; }
+            .section-divider { margin: 0 1.5rem; }
+            .cta-group { gap: 0.5rem 1.25rem; }
+            .social-links { gap: 0.875rem; }
+            .social-links a { font-size: 0.6875rem; }
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle, .mobile-nav { display: none; }
+        .mobile-menu-toggle svg { width: 18px; height: 18px; }
+        .close-icon, [aria-expanded="true"] .menu-icon { display: none; }
+        [aria-expanded="true"] .close-icon { display: block; }
+        @media (max-width: 700px) {
+            header nav { display: none; }
+            .header-actions { gap: 0.25rem; }
+            .mobile-menu-toggle { display: grid; }
+            .mobile-nav.open { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; max-width: 800px; margin: 0 auto; padding: 0 1.5rem 1rem; }
+            .mobile-nav a { padding: 0.5rem 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    <div class="noise"></div>
+
+    <header>
+        <div class="container">
+            <a href="./" class="logo">badalotti<span>.dev</span></a>
+            <div class="header-actions">
+                <nav aria-label="Main navigation">
+                    <a href="#projects">Side Projects</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://github.com/mateusbadalotti">GitHub</a>
+                </nav>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-navigation">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation">
+        <a href="#projects">Side Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/mateusbadalotti" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+<div class="hero-header">
+                        <img src="profile.jpeg" width="56" height="56" alt="Mateus Badalotti" class="profile-photo">
+                        <h1>Mateus Badalotti</h1>
+                    </div>
+                    <p class="hero-title">Senior Software Engineer</p>
+
+                    <p>I build reliable software that makes complex work simpler.</p>
+
+                    <div class="location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        Brazil — Remote
+                    </div>
+
+                    <div class="cta-group">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="https://linkedin.com/in/mateusbadalotti" class="btn btn-secondary btn-icon" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="mateus_badalotti_resume.pdf" class="btn btn-secondary btn-icon" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Side Projects</h2>
+                <ul class="projects-list">
+                    <li><a href="https://github.com/mateusbadalotti/audio-priority" class="project" target="_blank" rel="noopener noreferrer">
+                        <h3 class="project-title">Audio Priority</h3>
+                        <p>Automatically switch to your preferred audio device on macOS.</p>
+                        <span class="project-link" aria-hidden="true">↗</span>
+                    </a></li>
+                    <li><a href="https://github.com/mateusbadalotti/tab-volume" class="project" target="_blank" rel="noopener noreferrer">
+                        <h3 class="project-title">Tab Volume</h3>
+                        <p>Independent volume control for every Chrome tab.</p>
+                        <span class="project-link" aria-hidden="true">↗</span>
+                    </a></li>
+                    <li><a href="https://github.com/mateusbadalotti/ytfast" class="project" target="_blank" rel="noopener noreferrer">
+                        <h3 class="project-title">ytfast</h3>
+                        <p>A native YouTube Music app for macOS, Windows, and Linux.</p>
+                        <span class="project-link" aria-hidden="true">↗</span>
+                    </a></li>
+                    <li><a href="https://github.com/mateusbadalotti/randomplace" class="project" target="_blank" rel="noopener noreferrer">
+                        <h3 class="project-title">RandomPlace</h3>
+                        <p>Discover random places around the world.</p>
+                        <span class="project-link" aria-hidden="true">↗</span>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="companies">
+            <p class="companies-label">Companies I've worked with</p>
+            <div class="marquee" data-marquee>
+                <div class="marquee-track">
+                    <div class="marquee-group" data-marquee-group>
+                        <a href="https://insi.com/br" target="_blank" rel="noopener noreferrer">Insi</a>
+                        <a href="https://sap.com" target="_blank" rel="noopener noreferrer">SAP</a>
+                        <a href="https://dell.com" target="_blank" rel="noopener noreferrer">Dell</a>
+                        <a href="https://lojasrenner.com.br" target="_blank" rel="noopener noreferrer">Lojas Renner</a>
+                        <a href="https://vivara.com.br" target="_blank" rel="noopener noreferrer">Vivara</a>
+                        <a href="https://iplace.com.br" target="_blank" rel="noopener noreferrer">iPlace</a>
+                        <a href="https://compass.uol" target="_blank" rel="noopener noreferrer">Compass UOL</a>
+                        <a href="https://aggrandize.com.br" target="_blank" rel="noopener noreferrer">Aggrandize</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stack">
+            <div class="container">
+                <h2 class="section-title">STACK <span class="section-subtitle">- but not limited to</span></h2>
+                <div class="stack-grid">
+                    <span class="stack-badge">Java</span>
+                    <span class="stack-badge">JavaScript</span>
+                    <span class="stack-badge">TypeScript</span>
+                    <span class="stack-badge">Python</span>
+                    <span class="stack-badge">SQL</span>
+                    <span class="stack-badge">Spring Boot</span>
+                    <span class="stack-badge">Node.js</span>
+                    <span class="stack-badge">React</span>
+                    <span class="stack-badge">Vue.js</span>
+                    <span class="stack-badge">AWS</span>
+                    <span class="stack-badge">Git</span>
+                    <span class="stack-badge">DevOps</span>
+                    <span class="stack-badge">Linux</span>
+                    <span class="stack-badge">K8s</span>
+                    <span class="stack-badge">RabbitMQ</span>
+                    <span class="stack-badge">AI Tools</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <h2 class="section-title">What colleagues say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <p class="testimonial-text">Mateus is a very qualified professional! We worked together on Lojas Renner project, where I was the technical leader and Mateus was our technical reference for the entire development team. He has a lot of technical knowledge and is always ready to learn and teach his colleagues.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Igor Cadena</span>
+                                <span class="testimonial-role">Enterprise Architect</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">I worked with Mateus at the beginning of my career as a developer, I can't find words to express how much he helped me. Two years later, I had the opportunity to work with him again, and he only improved. Mateus is the type of developer that fits into any team.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Gustavo Tartas</span>
+                                <span class="testimonial-role">Senior Fullstack Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+    </main>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <form class="contact-form" action="https://formspree.io/f/xvzqplon" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="spotify-banner">
+        <div class="container">
+            <span class="spotify-text">Check out what I'm listening to</span>
+            <a href="https://open.spotify.com/user/31xdxznmbt3p7fowex4s2elduofm" class="spotify-link" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                Follow on Spotify
+            </a>
+        </div>
+    </section>
+
+    <section class="raycast-banner">
+        <div class="container">
+            <span class="raycast-text">Boost your productivity with Raycast</span>
+            <a href="https://badalotti.dev/raycast" class="raycast-link" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="#000"><path fill-rule="evenodd" d="M6 15.491v2.504l-6-6 1.251-1.251zm2.504 2.504H6l6 6 1.251-1.251zm14.24-4.747 1.253-1.253-12-12-1.25 1.256 4.747 4.747h-2.868L9.312 2.691 8.061 3.942l2.06 2.061h-1.44v9.314h9.314v-1.44l2.061 2.06 1.251-1.25-3.312-3.314v-2.87zM6.626 5.374 5.37 6.627 6.714 7.97l1.252-1.252zM17.282 16.03l-1.252 1.253 1.343 1.344 1.253-1.253zM3.939 8.06 2.686 9.315 6 12.627v-2.506zM13.88 18h-2.506l3.313 3.314 1.253-1.253z" clip-rule="evenodd"/></svg>
+                Get 10% off Raycast Pro
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://instagram.com/mateus.badalotti" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    Instagram
+                </a>
+                <a href="https://x.com/mateusbadalotti" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    X
+                </a>
+                <a href="https://github.com/mateusbadalotti" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/mateusbadalotti" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+            </div>
+            <div class="footer-meta">© <span id="year"></span> Mateus Badalotti</div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const html = document.documentElement;
+        const themeToggle = document.querySelector('.theme-toggle');
+        html.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+        themeToggle.addEventListener('click', () => {
+            const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const closeMenu = () => {
+            mobileNav.classList.remove('open');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        };
+        mobileMenuToggle.addEventListener('click', () => {
+            const open = mobileNav.classList.toggle('open');
+            mobileMenuToggle.setAttribute('aria-expanded', String(open));
+        });
+        mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && mobileNav.classList.contains('open')) {
+                closeMenu();
+                mobileMenuToggle.focus();
+            }
+        });
+
+        const backToTop = document.querySelector('.back-to-top');
+        const scrollProgress = document.querySelector('.scroll-progress');
+        const backToTopThreshold = 400;
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > backToTopThreshold);
+            const height = document.documentElement.scrollHeight - window.innerHeight;
+            scrollProgress.style.transform = 'scaleX(' + (height > 0 ? window.scrollY / height : 0) + ')';
+        }, { passive: true });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0 }));
+
+        const contactForm = document.querySelector('.contact-form');
+        contactForm.addEventListener('submit', () => {
+            const button = contactForm.querySelector('.form-submit');
+            button.textContent = 'Sending...';
+            button.disabled = true;
+        });
+    </script>
+</body>
+</html>
